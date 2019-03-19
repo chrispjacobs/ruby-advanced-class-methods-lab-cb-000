@@ -60,6 +60,17 @@ class Song
     generated
   end
 
+  def self.create_from_filename
+    split_array = []
+    split_array = song_file_name.split(" - ")
+    generated = Song.new
+    split_array[1] = split_array[1].split(".")[0]
+    generated.artist_name=(split_array[0])
+    generated.name=(split_array[1])
+    @@add << generated
+    generated
+  end
+
   def self.destroy_all
     @@all = []
   end
