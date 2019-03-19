@@ -52,9 +52,9 @@ class Song
 
   def self.new_from_filename(song_file_name)
     split_array = []
-    split_array << song_file_name.split(" - ")
+    split_array = song_file_name.split(" - ")
     generated = Song.new
-    split_array[1] = split_array[1] - ".mp3"
+    split_array[1] = split_array[1].split(".")[0]
     generated.artist_name=(split_array[0])
     generated.name=(split_array[1])
     generated
@@ -66,14 +66,4 @@ class Song
 
 end
 
-song_file_name = "The Beatles - Help!.mp3"
-split_array = []
-split_array = song_file_name.split(" - ")
-generated = Song.new
-split_array[1] = split_array[1].split(".")[0]
-puts split_array[1]
-#generated.artist_name=(split_array[0])
-#generated.name=(split_array[1])
-#puts generated
-
-# puts Song.new_from_filename("System of a Down - Toxicity.mp3").name
+puts Song.new_from_filename("System of a Down - Toxicity.mp3").name
