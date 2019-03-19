@@ -60,7 +60,7 @@ class Song
     generated
   end
 
-  def self.create_from_filename
+  def self.create_from_filename(song_file_name)
     split_array = []
     split_array = song_file_name.split(" - ")
     generated = Song.new
