@@ -76,3 +76,5 @@ class Song
   end
 
 end
+
+puts Song.create_from_filename("System of a Down - Toxicity.mp3")
