@@ -68,7 +68,7 @@ end
 
 song_file_name = "The Beatles - Help!.mp3"
 split_array = []
-split_array << song_file_name.split(" - ")
+split_array = song_file_name.split(" - ")
 generated = Song.new
 good_version_of_title = []
 puts split_array
