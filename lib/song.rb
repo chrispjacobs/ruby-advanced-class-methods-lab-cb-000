@@ -70,7 +70,8 @@ song_file_name = "The Beatles - Help!.mp3"
 split_array = []
 split_array << song_file_name.split(" - ")
 generated = Song.new
-split_array[1] = split_array[1].split(".")[0]
+good_version_of_title = []
+good_version_of_title << split_array[1].split(".")
 puts split_array[1]
 #generated.artist_name=(split_array[0])
 #generated.name=(split_array[1])
