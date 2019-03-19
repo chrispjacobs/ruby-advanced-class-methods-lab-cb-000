@@ -65,5 +65,3 @@ class Song
   end
 
 end
-
-puts Song.new_from_filename("System of a Down - Toxicity.mp3").name
