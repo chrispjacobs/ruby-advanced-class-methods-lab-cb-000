@@ -71,6 +71,7 @@ split_array = []
 split_array = song_file_name.split(" - ")
 generated = Song.new
 split_array[1] = split_array[1].split(".")[0]
+puts split_array[1]
 #generated.artist_name=(split_array[0])
 #generated.name=(split_array[1])
 #puts generated
