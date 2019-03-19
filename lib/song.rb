@@ -67,7 +67,7 @@ class Song
     split_array[1] = split_array[1].split(".")[0]
     generated.artist_name=(split_array[0])
     generated.name=(split_array[1])
-    @@add << generated
+    @@all << generated
     generated
   end
 
